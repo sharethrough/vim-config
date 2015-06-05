@@ -23,7 +23,7 @@ and ctrl-up and down are mac shortcuts
 
 - removed zencoding thing, not sure what it does or if anyone uses it
 
-- would like to remove reselect after indenting, just use the . command if you
+- removed reselect after indenting, just use the . command if you
 want to indent multiple times.
 
 - stop defaulting to regex mode form vim search, just type \v if you want that

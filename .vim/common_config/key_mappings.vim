@@ -62,10 +62,6 @@ nnoremap <silent> <leader>cf :let @* = expand("%:~")<CR>
 "handy mapping for vertical split windows
 map <leader>v :vsplit <cr>
 
-"re-select after indenting -- would like to remove
-vnoremap < <gv
-vnoremap > >gv
-
 " Map the escape key to
 inoremap jj <Esc>
 inoremap jk <Esc>
