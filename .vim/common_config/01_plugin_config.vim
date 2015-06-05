@@ -20,6 +20,26 @@
   NeoBundle "git://github.com/vim-scripts/matchit.zip"
   NeoBundle "git://github.com/vim-scripts/ruby-matchit.git"
   NeoBundle "git://github.com/tpope/vim-abolish.git"
+  NeoBundle "git://github.com/robgleeson/vim-markdown-preview.git"
+  NeoBundle "git://github.com/ecomba/vim-ruby-refactoring.git"
+  NeoBundle "git://github.com/ecomba/rweald/slurper.vim.git"
+  NeoBundle "git://github.com/joestelmach/javaScriptLint.vim.git"
+  NeoBundle "git://github.com/tpope/vim-bundler.git"
+  NeoBundle "git://github.com/marcus/autotag.vim.git"
+  NeoBundle "git://github.com/derekwyatt/vim-scala.git"
+  NeoBundle "git://github.com/rweald/pig.vim.git"
+  NeoBundle "git://github.com/sickill/vim-pasta.git"
+  NeoBundle "git://github.com/vim-scripts/mru.vim.git"
+  NeoBundle "git://github.com/xolox/vim-session.git"
+  NeoBundle "git://github.com/duff/vim-bufonly.git"
+  NeoBundle "git://github.com/garbas/vim-snipmate.git"
+  NeoBundle "git://github.com/tomtom/tlib_vim.git"
+  NeoBundle "git://github.com/MarcWeber/vim-addon-mw-utils.git"
+  NeoBundle "git://github.com/scrooloose/nerdcommenter.git"
+  NeoBundle "git://github.com/aghareza/vim-gitgrep.git"
+  NeoBundle "git://github.com/wookiehangover/jshint.vim.git"
+  NeoBundle "git://github.com/airblade/vim-gitgutter.git"
+  NeoBundle "git://github.com/klen/python-mode.git"
 
  " Vim airline configs
   NeoBundle 'git://github.com/bling/vim-airline.git'
@@ -58,6 +78,7 @@
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>
     nnoremap <Leader>T :<C-U>CtrlPTag<CR>
+    map <Leader>cpc :CtrlPClearCache<CR>
 
     " respect the .gitignore
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
@@ -86,6 +107,12 @@
   NeoBundle "git://github.com/kchmck/vim-coffee-script.git"
     au BufNewFile,BufRead *.coffee set filetype=coffee
 
+" Erlang
+  NeoBundle "git://github.com/oscarh/vimerl.git"
+
+" LaTeX
+  NeoBundle "git://github.com/kevinstreit/VIM-Latex.git"
+
 " AG aka The Silver Searcher
   NeoBundle 'git://github.com/rking/ag.vim.git'
     nmap g/ :Ag!<space>
@@ -96,12 +123,17 @@
     nmap gq :ccl<CR>
     nmap gl :cwindow<CR>
 
+" STR ag commands
+    nnoremap <leader>ag :Ag
+    nnoremap <leader>gg :GitGrep
+
 
 " Tagbar for navigation by tags using CTags
   NeoBundle "git://github.com/majutsushi/tagbar.git"
     let g:tagbar_autofocus = 1
     map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
     map <Leader>. :TagbarToggle<CR>
+    map <C-\> :tnext<CR>
 
 " Markdown syntax highlighting
   NeoBundle "git://github.com/tpope/vim-markdown.git"
@@ -114,8 +146,10 @@
 " NERDTree for project drawer
   NeoBundle "git://github.com/scrooloose/nerdtree.git"
     let NERDTreeHijackNetrw = 0
+    let NERDTreeIgnore=['\.rbc$', '\~$']
     nmap <leader>g :NERDTreeToggle<CR>
     nmap <leader>G :NERDTreeFind<CR>
+    map <Leader>nt :NERDTreeToggle<CR>
 
 
 " Tabular for aligning text
@@ -140,6 +174,7 @@
 " ZoomWin to fullscreen a particular buffer without losing others
   NeoBundle "git://github.com/vim-scripts/ZoomWin.git"
     map <Leader>z :ZoomWin<CR>
+    map <Leader><Leader> :ZoomWin<CR>
 
 
 " Unimpaired for keymaps for quicky manipulating lines and files

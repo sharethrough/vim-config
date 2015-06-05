@@ -1,6 +1,51 @@
-# Neo Vim Config
 
-You should give it a try.
+# Sharethrough Vim Config
+
+Newer and Better than ever!
+
+## Changes from before
+
+- Some of these changes may be bad, please let me know if you preferred them
+and we can work something out
+
+- removed <leader>bd :Kwbd<CR> since it's overloading the <leader>b command
+for ctrl-p
+
+- removed <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR> since it is
+overloading leader-t
+
+- removed <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR> since it seems useless
+
+- removed <C-P> <C-R>=expand("%:p:h") . "/" <CR> since it also seems useless
+
+- removed bubble up and down shortcuts since \[e is not difficult to press
+and ctrl-up and down are mac shortcuts
+
+- removed zencoding thing, not sure what it does or if anyone uses it
+
+- would like to remove reselect after indenting, just use the . command if you
+want to indent multiple times.
+
+- stop defaulting to regex mode form vim search, just type \v if you want that
+
+- remove mappings for dealing with multiple buffers, everyone uses cursor
+histroy or fuzzy finder and one of them overloads strip-whitespace (leader-c)
+
+- remove  the following:
+  - command TrimWhiteSpace
+  - command TitleCase
+  You may use `leader-c` for stripping whitespace or `crc` for switching from snake to camel case
+
+- remove special keybindings for when using wrap mode, just use leader-w to
+toggle between them and use gj gk when moving between wrapped lines, you
+shouldn't be need wrapping that often
+
+- stop refreshing nerdtree on focus gained, just press R if you need to
+refresh, that's probably slowing down vim
+
+- remove all those unnecessary nerdtree functions, all those things are doable
+with vanilla nerdtree, just learn the keybindings
+
 
 ## Pre-requisites
 
