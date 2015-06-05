@@ -27,10 +27,11 @@ if has('win32')
 endif
 
 " Command-T for ControlP -- just fyi I don't like this :)
-if has("gui_macvim")
+if has('gui_macvim')
+  macmenu &File.New\ Tab key=<D-T>
   map <D-t> :CtrlP<CR>
   imap <D-t> <Esc>:CtrlP<CR>
-endif
+end
 
 " set default font
 " https://github.com/Lokaltog/powerline-fonts
