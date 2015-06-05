@@ -46,6 +46,18 @@ refresh, that's probably slowing down vim
 - remove all those unnecessary nerdtree functions, all those things are doable
 with vanilla nerdtree, just learn the keybindings
 
+- remove gitgrep.vim, overriding shortcuts (leader-g which is used for nerdtree)
+  - :Ggrep should still be usable because of vim-fugitive
+  - Let me know if you would like this shortcut back, I'm just very used to using leader-g for nerdtree toggle, but we're trying to compromise here :)
+
+- remove vim-session since it was being really annoying and hijacking me all the time, also i don't think it was working before.
+
+- Use vimtex instead of vim-latex since it was throwing an error (must be really old)
+
+- stop remembering last position in the file, I found that to be quite annoying across sessions
+
+
+
 
 ## Pre-requisites
 

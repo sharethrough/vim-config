@@ -30,13 +30,11 @@
   NeoBundle "git://github.com/rweald/pig.vim.git"
   NeoBundle "git://github.com/sickill/vim-pasta.git"
   NeoBundle "git://github.com/vim-scripts/mru.vim.git"
-  NeoBundle "git://github.com/xolox/vim-session.git"
   NeoBundle "git://github.com/duff/vim-bufonly.git"
   NeoBundle "git://github.com/garbas/vim-snipmate.git"
   NeoBundle "git://github.com/tomtom/tlib_vim.git"
   NeoBundle "git://github.com/MarcWeber/vim-addon-mw-utils.git"
   NeoBundle "git://github.com/scrooloose/nerdcommenter.git"
-  NeoBundle "git://github.com/aghareza/vim-gitgrep.git"
   NeoBundle "git://github.com/wookiehangover/jshint.vim.git"
   NeoBundle "git://github.com/airblade/vim-gitgutter.git"
   NeoBundle "git://github.com/klen/python-mode.git"
@@ -111,7 +109,7 @@
   NeoBundle "git://github.com/oscarh/vimerl.git"
 
 " LaTeX
-  NeoBundle "git://github.com/kevinstreit/VIM-Latex.git"
+  NeoBundle "git://github.com/lervag/vimtex.git"
 
 " AG aka The Silver Searcher
   NeoBundle "git://github.com/rking/ag.vim.git"
@@ -125,7 +123,6 @@
 
 " STR ag commands
     nnoremap <leader>ag :Ag
-    nnoremap <leader>gg :GitGrep
 
 
 " Tagbar for navigation by tags using CTags

@@ -99,9 +99,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,*/target/**
 " allow lots of tabs
 set tabpagemax=20
 
-" remember last position in file
-au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
-
 " make and python use real tabs
 au FileType make set noexpandtab
 
@@ -112,14 +109,10 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=r
 au BufNewFile,BufRead *.json set ai filetype=javascript
 
 " md, markdown, and mk are markdown and define buffer-local preview
-au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set spell
 
 " Set encoding
 set encoding=utf-8
-
-" Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
 
 " Use modeline overrides
 set modeline

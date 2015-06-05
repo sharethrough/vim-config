@@ -112,7 +112,3 @@ nnoremap <C-s> :call FindSpec()<CR>
 " Command-/ to toggle comments
 map <D-/> <plug>NERDCommenterToggle<CR>
 
-" Command-T for ControlP -- just fyi I don't like this :)
-macmenu &File.New\ Tab key=<D-T>
-map <D-t> :CtrlP<CR>
-imap <D-t> <Esc>:CtrlP<CR>
