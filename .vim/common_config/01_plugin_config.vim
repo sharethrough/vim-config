@@ -6,43 +6,43 @@
  NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Plugins requiring no additional configuration or keymaps
-  NeoBundle "git://github.com/michaeljsmith/vim-indent-object.git"
-  NeoBundle "git://github.com/oscarh/vimerl.git"
-  NeoBundle "git://github.com/pangloss/vim-javascript.git"
-  NeoBundle "git://github.com/tomtom/tcomment_vim.git"
-  NeoBundle "git://github.com/tpope/vim-endwise.git"
-  NeoBundle "git://github.com/tpope/vim-fugitive.git"
-  NeoBundle "git://github.com/tpope/vim-haml.git"
-  NeoBundle "git://github.com/tpope/vim-rake.git"
-  NeoBundle "git://github.com/tpope/vim-repeat.git"
-  NeoBundle "git://github.com/vim-ruby/vim-ruby.git"
-  NeoBundle "git://github.com/vim-scripts/L9.git"
-  NeoBundle "git://github.com/vim-scripts/matchit.zip"
-  NeoBundle "git://github.com/vim-scripts/ruby-matchit.git"
-  NeoBundle "git://github.com/tpope/vim-abolish.git"
-  NeoBundle "git://github.com/robgleeson/vim-markdown-preview.git"
-  NeoBundle "git://github.com/ecomba/vim-ruby-refactoring.git"
-  NeoBundle "git://github.com/ecomba/rweald/slurper.vim.git"
-  NeoBundle "git://github.com/joestelmach/javaScriptLint.vim.git"
-  NeoBundle "git://github.com/tpope/vim-bundler.git"
-  NeoBundle "git://github.com/marcus/autotag.vim.git"
-  NeoBundle "git://github.com/derekwyatt/vim-scala.git"
-  NeoBundle "git://github.com/rweald/pig.vim.git"
-  NeoBundle "git://github.com/sickill/vim-pasta.git"
-  NeoBundle "git://github.com/vim-scripts/mru.vim.git"
-  NeoBundle "git://github.com/xolox/vim-session.git"
-  NeoBundle "git://github.com/duff/vim-bufonly.git"
-  NeoBundle "git://github.com/garbas/vim-snipmate.git"
-  NeoBundle "git://github.com/tomtom/tlib_vim.git"
-  NeoBundle "git://github.com/MarcWeber/vim-addon-mw-utils.git"
-  NeoBundle "git://github.com/scrooloose/nerdcommenter.git"
-  NeoBundle "git://github.com/aghareza/vim-gitgrep.git"
-  NeoBundle "git://github.com/wookiehangover/jshint.vim.git"
-  NeoBundle "git://github.com/airblade/vim-gitgutter.git"
-  NeoBundle "git://github.com/klen/python-mode.git"
+  NeoBundle "michaeljsmith/vim-indent-object.git"
+  NeoBundle "oscarh/vimerl.git"
+  NeoBundle "pangloss/vim-javascript.git"
+  NeoBundle "tomtom/tcomment_vim.git"
+  NeoBundle "tpope/vim-endwise.git"
+  NeoBundle "tpope/vim-fugitive.git"
+  NeoBundle "tpope/vim-haml.git"
+  NeoBundle "tpope/vim-rake.git"
+  NeoBundle "tpope/vim-repeat.git"
+  NeoBundle "vim-ruby/vim-ruby.git"
+  NeoBundle "vim-scripts/L9.git"
+  NeoBundle "vim-scripts/matchit.zip"
+  NeoBundle "vim-scripts/ruby-matchit.git"
+  NeoBundle "tpope/vim-abolish.git"
+  NeoBundle "robgleeson/vim-markdown-preview.git"
+  NeoBundle "ecomba/vim-ruby-refactoring.git"
+  NeoBundle "ecomba/rweald/slurper.vim.git"
+  NeoBundle "joestelmach/javaScriptLint.vim.git"
+  NeoBundle "tpope/vim-bundler.git"
+  NeoBundle "marcus/autotag.vim.git"
+  NeoBundle "derekwyatt/vim-scala.git"
+  NeoBundle "rweald/pig.vim.git"
+  NeoBundle "sickill/vim-pasta.git"
+  NeoBundle "vim-scripts/mru.vim.git"
+  NeoBundle "xolox/vim-session.git"
+  NeoBundle "duff/vim-bufonly.git"
+  NeoBundle "garbas/vim-snipmate.git"
+  NeoBundle "tomtom/tlib_vim.git"
+  NeoBundle "MarcWeber/vim-addon-mw-utils.git"
+  NeoBundle "scrooloose/nerdcommenter.git"
+  NeoBundle "aghareza/vim-gitgrep.git"
+  NeoBundle "wookiehangover/jshint.vim.git"
+  NeoBundle "airblade/vim-gitgutter.git"
+  NeoBundle "klen/python-mode.git"
 
  " Vim airline configs
-  NeoBundle 'git://github.com/bling/vim-airline.git'
+  NeoBundle 'bling/vim-airline.git'
   let g:airline_powerline_fonts = 1
   let g:airline_mode_map = {
       \ '__' : '-',
@@ -59,22 +59,22 @@
       \ }
 
 " Easy motion config
-  NeoBundle "git://github.com/Lokaltog/vim-easymotion.git"
+  NeoBundle "Lokaltog/vim-easymotion.git"
 
 "Supertab code completion"
-  NeoBundle "git://github.com/ervandew/supertab.git"
+  NeoBundle "ervandew/supertab.git"
   let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 
 " Dash Searching"
-  NeoBundle "git://github.com/rizzatti/funcoo.vim.git"
-  NeoBundle "git://github.com/rizzatti/dash.vim.git"
+  NeoBundle "rizzatti/funcoo.vim.git"
+  NeoBundle "rizzatti/dash.vim.git"
     nmap <Leader>qs <Plug>DashSearch
     nmap <Leader>qa <Plug>DashGlobalSearch
 
 
 " CtrlP
-  NeoBundle "git://github.com/kien/ctrlp.vim.git"
+  NeoBundle "kien/ctrlp.vim.git"
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>
     nnoremap <Leader>T :<C-U>CtrlPTag<CR>
@@ -84,37 +84,37 @@
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
 " Go
-  NeoBundle "git://github.com/jnwhiteh/vim-golang.git"
+  NeoBundle "jnwhiteh/vim-golang.git"
     au BufNewFile,BufRead *.go set filetype=go
 
 " Slim
-  NeoBundle "git://github.com/slim-template/vim-slim.git"
+  NeoBundle "slim-template/vim-slim.git"
     au BufNewFile,BufRead *.slim set filetype=slim
 
 " Less
-  NeoBundle "git://github.com/groenewege/vim-less.git"
+  NeoBundle "groenewege/vim-less.git"
     au BufNewFile,BufRead *.less set filetype=less
 
 " Handlebars, Mustache, and Friends
-  NeoBundle "git://github.com/mustache/vim-mustache-handlebars.git"
+  NeoBundle "mustache/vim-mustache-handlebars.git"
   au  BufNewFile,BufRead *.mustache,*.handlebars,*.hbs,*.hogan,*.hulk,*.hjs set filetype=html syntax=mustache | runtime! ftplugin/mustache.vim ftplugin/mustache*.vim ftplugin/mustache/*.vim
 
 " Stylus
-  NeoBundle "git://github.com/wavded/vim-stylus.git"
+  NeoBundle "wavded/vim-stylus.git"
     au BufNewFile,BufRead *.styl set filetype=stylus
 
 " Coffee script
-  NeoBundle "git://github.com/kchmck/vim-coffee-script.git"
+  NeoBundle "kchmck/vim-coffee-script.git"
     au BufNewFile,BufRead *.coffee set filetype=coffee
 
 " Erlang
-  NeoBundle "git://github.com/oscarh/vimerl.git"
+  NeoBundle "oscarh/vimerl.git"
 
 " LaTeX
-  NeoBundle "git://github.com/kevinstreit/VIM-Latex.git"
+  NeoBundle "kevinstreit/VIM-Latex.git"
 
 " AG aka The Silver Searcher
-  NeoBundle 'git://github.com/rking/ag.vim.git'
+  NeoBundle 'rking/ag.vim.git'
     nmap g/ :Ag!<space>
     nmap g* :Ag! -w <C-R><C-W><space>
     nmap ga :AgAdd!<space>
@@ -129,14 +129,14 @@
 
 
 " Tagbar for navigation by tags using CTags
-  NeoBundle "git://github.com/majutsushi/tagbar.git"
+  NeoBundle "majutsushi/tagbar.git"
     let g:tagbar_autofocus = 1
     map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
     map <Leader>. :TagbarToggle<CR>
     map <C-\> :tnext<CR>
 
 " Markdown syntax highlighting
-  NeoBundle "git://github.com/tpope/vim-markdown.git"
+  NeoBundle "tpope/vim-markdown.git"
     augroup mkd
       autocmd BufNewFile,BufRead *.mkd      set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
       autocmd BufNewFile,BufRead *.md       set ai formatoptions=tcroqn2 comments=n:> filetype=markdown
@@ -144,7 +144,7 @@
     augroup END
 
 " NERDTree for project drawer
-  NeoBundle "git://github.com/scrooloose/nerdtree.git"
+  NeoBundle "scrooloose/nerdtree.git"
     let NERDTreeHijackNetrw = 0
     let NERDTreeIgnore=['\.rbc$', '\~$']
     nmap <leader>g :NERDTreeToggle<CR>
@@ -153,7 +153,7 @@
 
 
 " Tabular for aligning text
-  NeoBundle "git://github.com/godlygeek/tabular.git"
+  NeoBundle "godlygeek/tabular.git"
     function! CustomTabularPatterns()
       if exists('g:tabular_loaded')
         AddTabularPattern! symbols         / :/l0
@@ -172,24 +172,17 @@
     map <Leader>a :Tabularize<space>
 
 " ZoomWin to fullscreen a particular buffer without losing others
-  NeoBundle "git://github.com/vim-scripts/ZoomWin.git"
+  NeoBundle "vim-scripts/ZoomWin.git"
     map <Leader>z :ZoomWin<CR>
     map <Leader><Leader> :ZoomWin<CR>
 
 
 " Unimpaired for keymaps for quicky manipulating lines and files
-  NeoBundle "git://github.com/tpope/vim-unimpaired.git"
-    " Bubble single lines
-    nmap <C-Up> [e
-    nmap <C-Down> ]e
-
-    " Bubble multiple lines
-    vmap <C-Up> [egv
-    vmap <C-Down> ]egv
+  NeoBundle "tpope/vim-unimpaired.git"
 
 
 " Syntastic for catching syntax errors on save
-  NeoBundle "git://github.com/scrooloose/syntastic.git"
+  NeoBundle "scrooloose/syntastic.git"
     let g:syntastic_enable_signs=1
     let g:syntastic_quiet_messages = {'level': 'warning'}
     " syntastic is too slow for haml and sass
@@ -199,12 +192,12 @@
 
 
 " gundo for awesome undo tree visualization
-  NeoBundle "git://github.com/sjl/gundo.vim.git"
+  NeoBundle "sjl/gundo.vim.git"
     map <Leader>h :GundoToggle<CR>
 
 
 " rails.vim, nuff' said
-  NeoBundle "git://github.com/tpope/vim-rails.git"
+  NeoBundle "tpope/vim-rails.git"
     map <Leader>oc :Rcontroller<Space>
     map <Leader>ov :Rview<Space>
     map <Leader>om :Rmodel<Space>
@@ -215,7 +208,7 @@
 
 
 " surround for adding surround 'physics'
-  NeoBundle "git://github.com/tpope/vim-surround.git"
+  NeoBundle "tpope/vim-surround.git"
     " # to surround with ruby string interpolation
     let g:surround_35 = "#{\r}"
     " - to surround with no-output erb tag
@@ -225,11 +218,11 @@
 
 
 " Clojure Highlighting"
-  NeoBundle "git://github.com/tpope/vim-fireplace.git"
-  NeoBundle "git://github.com/tpope/vim-classpath.git"
-  NeoBundle "git://github.com/guns/vim-clojure-static.git"
-  NeoBundle "git://github.com/vim-scripts/paredit.vim"
-  NeoBundle "git://github.com/amdt/vim-niji.git"
+  NeoBundle "tpope/vim-fireplace.git"
+  NeoBundle "tpope/vim-classpath.git"
+  NeoBundle "guns/vim-clojure-static.git"
+  NeoBundle "vim-scripts/paredit.vim"
+  NeoBundle "amdt/vim-niji.git"
   autocmd BufNewFile,BufRead *.clj set filetype=clojure
   autocmd BufNewFile,BufRead *.edn set filetype=clojure
   autocmd BufNewFile,BufRead *.cljs set filetype=clojure
@@ -239,24 +232,25 @@
   let vimclojure#ParenRainbow  = 1
 
 " Jade Highlighting"
-  NeoBundle "git://github.com/digitaltoad/vim-jade.git"
+  NeoBundle "digitaltoad/vim-jade.git"
   autocmd BufNewFile,BufRead *.jade set filetype=jade
 
 " Scala Highlighting"
-  NeoBundle "git://github.com/derekwyatt/vim-scala.git"
+  NeoBundle "derekwyatt/vim-scala.git"
   autocmd BufNewFile,BufRead *.scala set filetype=scala
 
 " Elixir plugin
-  NeoBundle "git://github.com/elixir-lang/vim-elixir.git"
+  NeoBundle "elixir-lang/vim-elixir.git"
     au BufNewFile,BufRead *.ex set filetype=elixir
     au BufNewFile,BufRead *.exs set filetype=elixir
 
 " Rust!
-  NeoBundle 'git://github.com/wting/rust.vim.git'
+  NeoBundle 'wting/rust.vim.git'
 
 " Easy async RSpec running
   NeoBundle 'thoughtbot/vim-rspec'
-  NeoBundle "git://github.com/tpope/vim-dispatch.git"
+  NeoBundle "reshleman/vim-rspec.git"
+  NeoBundle "tpope/vim-dispatch.git"
   let g:rspec_command = "Dispatch rspec --format=progress --no-profile {spec}"
   nmap <Leader>rc :wa<CR> :call RunCurrentSpecFile()<CR>
   nmap <Leader>rn :wa<CR> :call RunNearestSpec()<CR>
