@@ -34,7 +34,8 @@ set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h15
 set lines=45 columns=120
 
 " pretty but not terminal-compatible color scheme
-colorscheme codeschool
+colorscheme gruvbox
+set background=dark
 
 runtime! custom_config/*.gvim
 
