@@ -3,6 +3,10 @@
 
 Newer and Better than ever!
 
+# NOTE: If you are coming from the original Sharethrough Vim config
+You must remove the symlink for .vimrc `.vimrc -> /<path to your home dir>/.vim/vimrc`
+You must also move your current .vimrc and .gvimrc to backup files (I recommend .vimrc.bak and .gvimrc.bak)
+
 ## Changes from before
 
 - Some of these changes may be bad, please let me know if you preferred them
