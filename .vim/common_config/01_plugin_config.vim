@@ -1,3 +1,6 @@
+" Need to do this first so all the shortcuts work
+let mapleader = ","
+
 " Plugins are managed by NeoBundle. Once VIM is open run :NeoBundleInstall to
 " install plugins.
  call neobundle#begin(expand('~/.vim/bundle/'))

@@ -1,5 +1,3 @@
-let mapleader=","
-
 " easy wrap toggling
 nmap <Leader>w :set wrap!<cr>
 nmap <Leader>W :set nowrap<cr>
