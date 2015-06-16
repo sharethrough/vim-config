@@ -125,7 +125,7 @@ let mapleader = ","
     nmap gl :cwindow<CR>
 
 " STR ag commands
-    nnoremap <leader>ag :Ag
+    nnoremap <leader>ag :Ag<space>
 
 
 " Tagbar for navigation by tags using CTags
