@@ -85,7 +85,7 @@ let mapleader = ","
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 
 " Go
-  NeoBundle "git://github.com/jnwhiteh/vim-golang.git"
+  NeoBundle "git://github.com/fatih/vim-go.git"
     au BufNewFile,BufRead *.go set filetype=go
 
 " Slim
