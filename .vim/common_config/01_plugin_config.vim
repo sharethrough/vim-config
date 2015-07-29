@@ -75,7 +75,7 @@ let mapleader = ","
 
 
 " CtrlP
-  NeoBundle "git://github.com/kien/ctrlp.vim.git"
+  NeoBundle "git://github.com/ctrlpvim/ctrlp.vim.git"
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>
     nnoremap <Leader>T :<C-U>CtrlPTag<CR>
