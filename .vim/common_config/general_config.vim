@@ -111,6 +111,9 @@ au BufNewFile,BufRead *.json set ai filetype=javascript
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set spell
 
+" nghaml is haml
+au BufNewFile,BufRead *.nghaml set ai filetype=haml
+
 " Set encoding
 set encoding=utf-8
 
