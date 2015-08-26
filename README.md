@@ -1,4 +1,3 @@
-
 # Sharethrough Vim Config
 
 Newer and Better than ever!
@@ -12,13 +11,13 @@ You must also move your current .vimrc and .gvimrc to backup files (I recommend 
 - Some of these changes may be bad, please let me know if you preferred them
 and we can work something out
 
-- removed <leader>bd :Kwbd<CR> since it's overloading the <leader>b command
+- removed \<leader\>bd :Kwbd<CR> since it's overloading the \<leader\>b command
 for ctrl-p
 
-- removed <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR> since it is
+- removed \<leader\>te :tabe <C-R>=expand("%:p:h") . "/" <CR> since it is
 overloading leader-t
 
-- removed <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR> since it seems useless
+- removed \<leader\>e :e <C-R>=expand("%:p:h") . "/" <CR> since it seems useless
 
 - removed <C-P> <C-R>=expand("%:p:h") . "/" <CR> since it also seems useless
 
