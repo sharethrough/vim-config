@@ -111,8 +111,11 @@ au BufNewFile,BufRead *.json set ai filetype=javascript
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set spell
 
+" Remove strange characters that trigger auto indent for haml
+au BufNewFile,BufRead *.haml set indentkeys=o,O,*<Return>,=else,=elsif,=rescue,=ensure,=when
+
 " nghaml is haml
-au BufNewFile,BufRead *.nghaml set ai filetype=haml
+au BufNewFile,BufRead *.nghaml set filetype=haml indentkeys=o,O,*<Return>,=else,=elsif,=rescue,=ensure,=when
 
 " Set encoding
 set encoding=utf-8
