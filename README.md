@@ -59,9 +59,6 @@ with vanilla nerdtree, just learn the keybindings
 
 - stop remembering last position in the file, I found that to be quite annoying across sessions
 
-
-
-
 ## Pre-requisites
 
 This config is built primarily to work on top of the OSX version of `MacVim`, but should be usable on top of other `vim` or `gvim` installations that are built with all of the `vim` features necessary to support the used plugins.
@@ -82,11 +79,11 @@ The Windows version of the Vim configuration uses rake (for installation) git (f
 
 Windows users: be sure to use **RailsInstaller** > **Command Prompt with Ruby and Rails** to perform these installation steps instead of the normal command prompt.
 
-1. `git clone git@github.com:neo/vim-config.git`
+1. `git clone git@github.com:edgecase/vim-config.git`
 2. `cd vim-config`
 3. `rake` (This will symlink the necessary files to your home directory, asking for permission before clobbering anything.)
 4. `vim` (or in Windows: `gvim`)
-5. `:NeoBundleClean` (if you have previously used this Neo Vim config)
+5. `:NeoBundleClean` (if you have previously used this EdgeCase Vim config)
 6. `:NeoBundleInstall` (This will clone and install all of the plugins from github.)
 
 ## Customizing
@@ -431,6 +428,10 @@ Ships with a few additional syntaxes:
 * Coffee Script
 * Erlang
 * Jade
+* Go
+* Elixir
+* Rust
+* Elm
 
 ## Color schemes
 
