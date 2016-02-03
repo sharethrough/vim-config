@@ -103,7 +103,6 @@ let mapleader = ","
     nmap ga :AgAdd!<space>
     nmap gn :cnext<CR>
     nmap gp :cprev<CR>
-    nmap gq :ccl<CR>
     nmap gl :cwindow<CR>
 
 " STR ag commands
