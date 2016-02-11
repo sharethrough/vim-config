@@ -23,6 +23,8 @@ let mapleader = ","
   NeoBundle "vim-scripts/matchit.zip"
   NeoBundle "vim-scripts/ruby-matchit"
   NeoBundle "tpope/vim-abolish"
+  NeoBundle "airblade/vim-gitgutter"
+  NeoBundle "scrooloose/nerdcommenter"
 
  " Vim airline configs
   NeoBundle 'bling/vim-airline'
