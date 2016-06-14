@@ -25,6 +25,7 @@ let mapleader = ","
   NeoBundle "tpope/vim-abolish"
   NeoBundle "airblade/vim-gitgutter"
   NeoBundle "scrooloose/nerdcommenter"
+  NeoBundle "skammer/vim-css-color"
 
  " Vim airline configs
   NeoBundle 'bling/vim-airline'
