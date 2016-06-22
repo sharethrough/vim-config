@@ -68,6 +68,7 @@ let mapleader = ","
 
     " respect the .gitignore
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
+    let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(swp|ico|git))$'
 
 " Go
   NeoBundle "jnwhiteh/vim-golang"
