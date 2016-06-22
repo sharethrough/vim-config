@@ -61,15 +61,23 @@ let mapleader = ","
 
 
 " CtrlP
-  NeoBundle "kien/ctrlp.vim"
+  NeoBundle "ctrlpvim/ctrlp.vim"
     nnoremap <Leader>b :<C-U>CtrlPBuffer<CR>
     nnoremap <Leader>t :<C-U>CtrlP<CR>
     nnoremap <Leader>T :<C-U>CtrlPTag<CR>
     map <Leader>cpc :CtrlPClearCache<CR>
 
-    " respect the .gitignore
-    let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
-    let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(swp|ico|git))$'
+    " The Silver Searcher
+    if executable('ag')
+      " Use ag over grep
+      set grepprg=ag\ --nogroup\ --nocolor
+
+      " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+      let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+      " ag is fast enough that CtrlP doesn't need to cache
+      let g:ctrlp_use_caching = 0
+    endif
 
 " Go
   NeoBundle "jnwhiteh/vim-golang"
