@@ -57,6 +57,7 @@ let mapleader = ","
   NeoBundle "rizzatti/dash.vim"
     nmap <Leader>qs <Plug>DashSearch
     nmap <Leader>qa <Plug>DashGlobalSearch
+    nmap <leader>q* <Plug>DashSearch
 
 
 " CtrlP
