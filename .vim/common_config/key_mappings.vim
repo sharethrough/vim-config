@@ -52,10 +52,10 @@ map <Leader>I gg=G``<cr>
 
 " insert the path of currently edited file into a command
 " Command mode: Ctrl-P
-cmap <C-S-P> <C-R>=expand("%:p:h") . "/" <cr>
+cmap <C-S-P> <C-R>=expand('%:p:h') . '/' <cr>
 
 " copy current filename into system clipboard - mnemonic: (c)urrent(f)ilename
-nnoremap <silent> <leader>cf :let @* = expand("%:~")<CR>
+nnoremap <silent> <leader>cf :let @* = expand('%:~')<CR>
 
 "handy mapping for vertical split windows
 map <leader>v :vsplit <cr>
@@ -79,22 +79,22 @@ noremap <leader>cd :cd %:p:h <Enter>
 " This method handles files in fast_spec unlike the :A and :AV functions
 " that ship with rails.vim
 function! FindSpec()
-  let s:fullpath = expand("%:p")
-  let s:filepath = expand("%:h")
-  let s:fname = expand("%:t")
+  let s:fullpath = expand('%:p')
+  let s:filepath = expand('%:h')
+  let s:fname = expand('%:t')
 
   " Possible names for the spec/test for the file we're looking at
-  let s:test_names = [substitute(s:fname, ".rb$", "_spec.rb", ""), substitute(s:fname, ".rb$", "_test.rb", "")]
+  let s:test_names = [substitute(s:fname, '.rb$', '_spec.rb', ''), substitute(s:fname, '.rb$', '_test.rb', '')]
 
   " Possible paths
-  let s:test_paths = ["spec", "fast_spec", "test"]
+  let s:test_paths = ['spec', 'fast_spec', 'test']
   for test_name in s:test_names
     for path in s:test_paths
-      let s:filepath_without_app = substitute(s:filepath, "app/", "", "")
-      let s:spec_path = path . "/" . s:filepath_without_app . "/" . test_name
-      let s:full_spec_path = substitute(s:fullpath, s:filepath . "/" . s:fname, s:spec_path, "")
+      let s:filepath_without_app = substitute(s:filepath, 'app/', '', '')
+      let s:spec_path = path . '/' . s:filepath_without_app . '/' . test_name
+      let s:full_spec_path = substitute(s:fullpath, s:filepath . '/' . s:fname, s:spec_path, '')
       if filereadable(s:full_spec_path)
-        execute ":botright vsp " . s:full_spec_path
+        execute ':botright vsp ' . s:full_spec_path
         return
       endif
     endfor
