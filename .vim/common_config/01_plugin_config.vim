@@ -88,11 +88,6 @@ let mapleader = ','
   NeoBundle 'kchmck/vim-coffee-script'
     au BufNewFile,BufRead *.coffee set filetype=coffee
 
-" Angular js
-  NeoBundle 'burnettk/vim-angular'
-  let g:angular_source_directory = 'app/assets/javascripts/angular'
-  let g:angular_test_directory = 'spec/javascripts/angular'
-
 " AG aka The Silver Searcher
   NeoBundle 'rking/ag.vim'
     nmap g/ :Ag!<space>
