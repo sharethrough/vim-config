@@ -163,13 +163,34 @@ let mapleader = ','
 
 " rails.vim, nuff' said
   NeoBundle 'tpope/vim-rails'
-    map <Leader>oc :Rcontroller<Space>
-    map <Leader>ov :Rview<Space>
-    map <Leader>om :Rmodel<Space>
-    map <Leader>oh :Rhelper<Space>
-    map <Leader>oj :Rjavascript<Space>
-    map <Leader>os :Rstylesheet<Space>
-    map <Leader>oi :Rintegration<Space>
+    map <Leader>oc :Econtroller<Space>
+    map <Leader>ov :Eview<Space>
+    map <Leader>om :Emodel<Space>
+    map <Leader>oh :Ehelper<Space>
+    map <Leader>oj :Ejavascript<Space>
+    map <Leader>os :Estylesheet<Space>
+    map <Leader>oi :Eintegration<Space>
+    " John Papa recommended angular naming conventions
+    let g:rails_projections = {
+      \  'app/assets/*.js.coffee': {
+      \     'alternate': 'spec/{}.spec.js.coffee'
+      \   },
+      \  'app/assets/*.js': {
+      \     'alternate': 'spec/{}.spec.js'
+      \   },
+      \  'app/assets/*.coffee': {
+      \     'alternate': 'spec/{}.spec.coffee'
+      \   },
+      \  'spec/*.spec.js.coffee': {
+      \     'alternate': 'app/assets/{}.js.coffee'
+      \   },
+      \  'spec/*.spec.js': {
+      \     'alternate': 'app/assets/{}.js'
+      \   },
+      \  'spec/*.spec.coffee': {
+      \     'alternate': 'app/assets/{}.coffee'
+      \   }
+      \}
 
 " surround for adding surround 'physics'
   NeoBundle 'tpope/vim-surround'
