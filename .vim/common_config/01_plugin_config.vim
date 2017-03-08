@@ -9,7 +9,6 @@ let mapleader = ','
  NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Plugins requiring no additional configuration or keymaps
-  NeoBundle 'michaeljsmith/vim-indent-object'
   NeoBundle 'pangloss/vim-javascript'
   NeoBundle 'tomtom/tcomment_vim'
   NeoBundle 'tpope/vim-endwise'
@@ -25,6 +24,7 @@ let mapleader = ','
   NeoBundle 'airblade/vim-gitgutter'
   NeoBundle 'scrooloose/nerdcommenter'
   NeoBundle 'scssquatch/vim-css-color'
+  NeoBundle 'tpope/vim-sleuth'
 
  " Vim airline configs
   NeoBundle 'bling/vim-airline'

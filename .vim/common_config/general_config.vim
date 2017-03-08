@@ -105,7 +105,7 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set spell
 au BufNewFile,BufRead *.haml set indentkeys=o,O,*<Return>,=else,=elsif,=rescue,=ensure,=when
 
 " nghaml is haml
-au BufNewFile,BufRead *.nghaml set filetype=haml indentkeys=o,O,*<Return>,=else,=elsif,=rescue,=ensure,=when
+au BufNewFile,BufRead *.nghaml set filetype=haml
 
 " Set encoding
 set encoding=utf-8
