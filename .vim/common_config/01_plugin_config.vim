@@ -22,7 +22,6 @@ let mapleader = ','
   NeoBundle 'vim-scripts/ruby-matchit'
   NeoBundle 'tpope/vim-abolish'
   NeoBundle 'airblade/vim-gitgutter'
-  NeoBundle 'scrooloose/nerdcommenter'
   NeoBundle 'scssquatch/vim-css-color'
   NeoBundle 'tpope/vim-sleuth'
 
@@ -208,7 +207,7 @@ let mapleader = ','
 " Easy async RSpec running
   NeoBundle 'thoughtbot/vim-rspec'
   NeoBundle 'tpope/vim-dispatch'
-  let g:rspec_command = 'Dispatch rspec --format=progress --no-profile {spec}'
+  let g:rspec_command = 'bundle exec rspec --format=progress --no-profile {spec}'
   nmap <Leader>rc :wa<CR> :call RunCurrentSpecFile()<CR>
   nmap <Leader>rn :wa<CR> :call RunNearestSpec()<CR>
   nmap <Leader>rl :wa<CR> :call RunLastSpec()<CR>
